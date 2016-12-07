@@ -18,6 +18,7 @@ use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+# [START app]
 // create the Silex application
 $app = new Application();
 
@@ -54,3 +55,4 @@ $app->post('/', function (Request $request) use ($app) {
 });
 
 return $app;
+# [END app]
