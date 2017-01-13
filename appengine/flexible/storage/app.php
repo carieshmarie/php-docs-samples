@@ -13,8 +13,9 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
-
+ *
+ 
+# [START app]
 # [START import_client]
 use Google\Cloud\Storage\StorageClient;
 # [END import_client]
@@ -77,5 +78,6 @@ $app['storage'] = function () use ($app) {
     # [END create_client]
     return $storage;
 };
+# [END app]
 
 return $app;
